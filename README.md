@@ -17,6 +17,21 @@ Key Features
 - Has detail hit stat
 
 
+Core Function Descriptor: xcache
+================
+
+```python
+@xcache(cache_size, key_func=None, release_func=None, log_keys=False)
+```
+
+| Param Value  | Description                 |
+| ------------ | ----------------------------|
+| cache_size   | size of cache storage       |
+| key_fun      | special key function        |
+| release_func | special release function    |
+| log_keys     | log keys, for ``DEBUG``     |
+
+
 Quick Start
 ===============
 
@@ -82,18 +97,3 @@ calc 9, 6
     }
 }
 ```
-
-Core Function Descriptor: xcache
-================
-
-```python
-@xcache(cache_size, key_func=None, release_func=None, log_keys=False)
-```
-
-| Param Value  | Description                 |
-| ------------ | ----------------------------|
-| cache_size   | size of cache storage       |
-| key_fun      | special key function        |
-| release_func | special release function    |
-| log_keys     | log keys, for ``DEBUG``     |
-
