@@ -4,7 +4,7 @@
 Authors:
     chuanqi.tan ### gmail.com
 
-XCache: A simplest and thread-safe LRU cache, which support key-func, release-func and hit-stat.
+XCache: A simple and thread-safe LRU cache, which support key-func, release-func and hit-stat.
 
 Features:
     - LRU cache

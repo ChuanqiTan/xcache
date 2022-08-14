@@ -1,4 +1,4 @@
-XCache: A simplest and thread-safe LRU cache, which support key-func, release-func and hit-stat.
+XCache: A simple and thread-safe LRU cache, which support key-func, release-func and hit-stat.
 ===============
 
 Setup
@@ -27,7 +27,7 @@ Core Function Descriptor: xcache
 | Param Value  | Description                 |
 | ------------ | ----------------------------|
 | cache_size   | size of cache storage       |
-| key_fun      | special key function        |
+| key_func     | special key function        |
 | release_func | special release function    |
 | log_keys     | log keys, for ``DEBUG``     |
 
@@ -56,7 +56,7 @@ if __name__ == "__main__":
     print(calc(1, 6))
     print(calc(9, 6))
 
-    print(json.dumps(show_xcache_hit_stat(x), indent=4))  # show detail hit stat
+    print(json.dumps(show_xcache_hit_stat(calc), indent=4))  # show detail hit stat
 ```
 
 outputs:
